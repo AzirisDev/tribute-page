@@ -1,4 +1,65 @@
+
+#main{
+    margin: 30px 10px 30px 10px;
+    background: linear-gradient(rgb(235, 235, 235), grey);
+    display: grid;
+    border-radius: 10px;
+    padding: 15px;
+    font-family: 'Syne Mono', monospace;
+    box-shadow: black 10px 10px 20px;
+}
+#jokerimage{
+    width: 100%;
+    border-radius: 25px;
+}
+#img{
+    
+    display:block;
+    border-radius: 25px;
+    background: linear-gradient(grey, rgb(235, 235, 235));
+    padding:10px;
+    font-size: 25px;
+    animation-name: unhover;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes unhover{
+    0%{
+        box-shadow: black 5px 5px 10px;
+    } 
+    100%{
+        box-shadow: black 0px 0px 0px;
+    }
+}
+
+#img:hover{
+    animation-name: hover;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes hover{
+    100%{
+        box-shadow: black 5px 5px 10px;
+    }
+}
+
+
+
+
+p{
+    text-align: center;
+    font-size: 25px;
+}
 h1{
-    background-color: black;
-    color: brown;
+    text-align: center;
+    font-family: 'Syne Mono', monospace;
+    font-size: 50px;
+}
+
+ul{
+    margin: auto;
+    line-height: 1.5;
+    font-size: 25px;
 }
